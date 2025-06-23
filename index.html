@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSan HUB</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --azul-profundo: #0A122A;
+      --azul-neon: #1E90FF;
+      --cinza-claro: #B0B3B8;
+      --branco: #F8F9FA;
+      --roxo-digital: #6F42C1;
+      --fonte-titulo: 'Orbitron', sans-serif;
+      --fonte-texto: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--fonte-texto);
+      background-color: var(--azul-profundo);
+      color: var(--branco);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: var(--azul-profundo);
+    }
+
+    header h1 {
+      font-family: var(--fonte-titulo);
+      color: var(--azul-neon);
+    }
+
+    .social-icons a {
+      color: var(--branco);
+      margin-left: 1rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--azul-neon);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: var(--branco);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--cinza-claro);
+    }
+
+    .btn {
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: transparent;
+      border: 2px solid var(--azul-neon);
+      color: var(--azul-neon);
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: var(--azul-neon);
+      color: var(--azul-profundo);
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img, .gallery video {
+      width: 100%;
+      border: 2px solid var(--roxo-digital);
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--azul-profundo);
+      font-size: 0.9rem;
+      color: var(--cinza-claro);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DSan HUB</h1>
+    <div class="social-icons">
+      <a href="https://instagram.com/dsanhub" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h2>Conectando você ao que a tecnologia tem de melhor.</h2>
+    <p>Soluções em IA, tecnologia e suporte de verdade.</p>
+    <button class="btn">Ver Portfólio</button>
+  </div>
+
+  <section>
+    <h2>Imagens Criadas com IA</h2>
+    <div class="gallery">
+      <img src="imagens/imagem1.jpg" alt="Imagem IA 1">
+      <img src="imagens/imagem2.jpg" alt="Imagem IA 2">
+    </div>
+  </section>
+
+  <section>
+    <h2>Vídeos e Animações</h2>
+    <div class="gallery">
+      <video controls src="videos/video1.mp4"></video>
+    </div>
+  </section>
+
+  <section>
+    <h2>Quem Somos</h2>
+    <p>A DSan HUB é mais do que uma loja. Somos um ponto de apoio para quem busca soluções práticas e acessíveis no universo da inteligência artificial, tecnologia e acessórios digitais.</p>
+    <ul>
+      <li>Simplicidade</li>
+      <li>Acessibilidade</li>
+      <li>Paixão</li>
+      <li>Fé e Integridade</li>
+      <li>Conexão</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>DSan HUB | Conectando você ao que a tecnologia tem de melhor.</p>
+  </footer>
+</body>
+</html>
